@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.cf::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav #nav-btn {
+    background-color: transparent;
+    background-size: contain;
+    background-image: url("images/list-512.png");
+    border: none;
+    text-indent: -99px;
+
+    
+    position: absolute;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+
+nav #menu {
+    background: #fff;
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    list-style: none;
+    margin-right: 0px;
+    margin-top: 58px;
+    
+    min-width: 10rem;
+    text-align: center;
+
+    display: none;
+    padding: 0.5rem 0;
+}
+
+nav #menu.active {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    margin: 0 1rem;
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+nav li:last-child a {
+    border-bottom: none;
+}
+
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin: 0 0 2rem;
+}
+h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0 1rem;
+}
+
+main {
+    margin: 2rem 4rem;
+    position: relative;
+}
+
+article {
+    margin: 0 0 2rem;
+}
+
+
+
+article p {
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.7;
+    margin: 0 0 2rem;
+}
+
+article h3 {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+article ul {
+   
+    list-style: none;
+    margin: 1rem 0 0;
+    border-radius: 3px;
+}
+
+article ul li {
+    font-weight: 200;
+    display: block;
+    text-align: justify;
+    line-height: 1.75;
+}
+
+article ul li strong {
+    font-weight: 400;
+    display: inline-block;
+    min-width: 7rem;
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    article {
+        max-width: 47.5%;
+        margin-right: 5%;
+        float: left;
+    }
+
+    article:nth-child(even) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1439px) {
+    article {
+        max-width: 31%;
+        margin-right: 3%;
+        float: left;
+    }
+
+    article:nth-child(3n+3) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    article {
+        max-width: 23%;
+        margin-right: 2%;
+        float: left;
+    }
+
+    article:nth-child(4n+4) {
+        margin-right: 0;
+    }
+}
